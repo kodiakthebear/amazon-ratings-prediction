@@ -7,7 +7,7 @@
 
 A Natural Language Processing (NLP) project that classifies E-commerce product reviews into numeric ratings (1-5 stars). This project compares traditional Machine Learning algorithms against Deep Learning architectures, utilizing advanced text representation techniques like TF-IDF and Pre-trained Word2Vec embeddings.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset Analysis](#dataset-analysis)
 - [Methodology](#methodology)
@@ -95,5 +95,5 @@ The notebook includes a standalone function `predict_product_rating`. To use it:
 * **Advanced Embeddings:** Fine-tune BERT or RoBERTa transformers for better contextual understanding.
 * **Hyperparameter Tuning:** Use KerasTuner to optimize CNN filter sizes and LSTM units.
 
-## 📜 License
+## License
 This project is open-source and available under the MIT License.
