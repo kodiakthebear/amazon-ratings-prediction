@@ -17,16 +17,16 @@ A Natural Language Processing (NLP) project that classifies E-commerce product r
 - [Installation & Usage](#installation--usage)
 - [Future Improvements](#future-improvements)
 
-## 🔍 Project Overview
+## Project Overview
 The goal of this project is to predict the sentiment score (1-5) of a product based solely on the textual content of its review. The project addresses the challenges of multi-class text classification and severe class imbalance using various architectural approaches.
 
-## 📊 Dataset Analysis
+## Dataset Analysis
 The dataset consists of **59,622** Amazon product reviews.
 * **Columns:** `Score` (1-5) and `Text` (Review content).
 * **Cleaning:** Missing values were imputed (median for scores, placeholders for text) and 14,000+ duplicates were removed.
 * **Distribution:** Exploratory Data Analysis (EDA) revealed a significant **Class Imbalance**, with 5-star reviews heavily dominating the dataset (>30k instances), while 1-4 star reviews combined comprised <25k instances.
 
-## ⚙️ Methodology
+## Methodology
 
 ### Preprocessing
 To ensure high-quality input data, a rigorous cleaning pipeline was implemented using **NLTK**:
@@ -49,7 +49,7 @@ To ensure high-quality input data, a rigorous cleaning pipeline was implemented 
     * Layers: Embedding (frozen Word2Vec) $\rightarrow$ Bidirectional LSTM $\rightarrow$ Dropout $\rightarrow$ Dense (Softmax).
     * Designed to capture long-term dependencies and sequential context.
 
-## 📈 Performance Results
+## Performance Results
 
 The models were evaluated on Accuracy, Precision, Recall, and F1-Score.
 
@@ -90,7 +90,7 @@ The notebook includes a standalone function `predict_product_rating`. To use it:
     predict_product_rating(text, model)
     ```
 
-## 🚀 Future Improvements
+## Future Improvements
 * **Handling Imbalance:** Implement SMOTE or Class Weighting to penalize misclassification of minority classes (1-3 stars).
 * **Advanced Embeddings:** Fine-tune BERT or RoBERTa transformers for better contextual understanding.
 * **Hyperparameter Tuning:** Use KerasTuner to optimize CNN filter sizes and LSTM units.
